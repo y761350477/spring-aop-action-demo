@@ -1,5 +1,5 @@
 package action.concert;
 
 public interface Performance {
-    void perform();
+    void perform(int num);
 }

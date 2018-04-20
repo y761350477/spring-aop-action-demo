@@ -12,7 +12,7 @@ public class MainApp {
         // 启用AspectJ自动代理(自动生成代理类有两种方式,JDK和CGLIB, 一个基于接口,一个基于类,默认(false)是JDK方式)
 //@EnableAspectJAutoProxy(proxyTargetClass = true)
         Performance performance = (Performance) ac.getBean("performance");
-        performance.perform();
+        performance.perform(10);
 
     }
 }

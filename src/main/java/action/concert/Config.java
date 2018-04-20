@@ -17,4 +17,9 @@ public class Config {
     public Performance performance() {
         return new PerformanceImpl();
     }
+
+    @Bean(value = "trackCounter")
+    public TrackCounter trackCounter() {
+        return new TrackCounter();
+    }
 }
