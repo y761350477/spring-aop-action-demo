@@ -1,0 +1,4 @@
+1. 获取bean的返回值时为什么是接口,而不是继承类?
+answer:
+    启用AspectJ自动代理(自动生成代理类有两种方式,JDK和CGLIB, 一个基于接口,一个基于类,默认(false)是JDK方式)@EnableAspectJAutoProxy(proxyTargetClass = true).
+2. 切点表达式的@Pointcut("execution(* action.concert.Performance.perform(..))")表示任意返回类型需要*后面有个空格.
